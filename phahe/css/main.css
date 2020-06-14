@@ -1,0 +1,92 @@
+body {
+    min-width: 700px;
+}
+header {
+    background-image: url(../images/bg-body.png);
+}
+main {
+    margin-top: -15px;
+
+}
+main .container {
+    max-width: 700px;
+    min-width: 700px;
+
+    border: 10px solid red;
+    border-image-width: 20px;
+    border-image-slice: 10;
+    border-image-repeat: round;
+    border-image-source:  url('../images/border-main.png');
+}
+/* gioi th */
+.box-introduct {
+    padding: 10px;
+}
+.box-phaDo, .box-phaKy {
+    text-align: center;
+}
+.list-phaDo {
+    margin-top: -30px;
+    padding-top: 30px;
+    border: 0.5px solid gold;
+
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    justify-content: center;
+}
+.pha_title {
+    background-color: gold;
+    border-radius: 10px;
+    color: white;
+
+    width: 150px;
+    margin: 5px auto;
+    z-index: 2;
+}
+/* .item-phaDo {
+        background-color: white;
+
+    text-align: center;
+} */
+.list-phaDo .item-phaDo ul {
+    list-style-type: none;
+}
+
+.list-phaDo .item-phaDo a {
+    color: black;
+    font-weight: initial;
+    font-size: 16px;
+}
+.list-phaDo .item-phaDo ul li .reset-heading a {
+    color: red;
+}.list-phaDo .item-phaDo ul li .reset-heading a:hover {
+    text-decoration: underline;
+}
+
+/* ========= Pha Ký ===== */
+.box-phaKy {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.box-phaKy .phaKy__list {
+    display: grid;
+    grid-template-columns: repeat(4, calc(100% / 4));
+
+    row-gap: 20px;
+    padding: 50px 0px 20px 0px;
+    border: 0.5px solid gold;
+    margin-top: -25px;
+    height: 500px;
+}
+ 
+.box-phaKy .phaKy__list .item-phaKy {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:center/90% no-repeat url('../images/bg-item.png');
+}
+.reset-heading a {
+    color: black
+}

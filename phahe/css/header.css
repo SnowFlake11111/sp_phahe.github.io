@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+}
+a {
+    text-decoration: none;
+    color: white
+}
+a:hover {
+    text-decoration: none;
+    color: white
+}
+.header__top {
+    height: 50px;
+    
+    /* display */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Menu con */
+.header__list-menu li:hover .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    margin-left: -75px;
+    font-size: 20px;
+    background:no-repeat TOP/100% url('../images/bder-top-submenu.png');
+    padding: 40px;
+}
+.sub-menu li {
+    text-align: center;
+    background-color: white;
+    
+    border: 20px solid gold;
+    border-top: none;
+    border-bottom: none;
+}
+.sub-menu li a {
+    color: black;
+}.sub-menu li:hover a {
+    color: white;
+    background-color: #790b0b;
+}
+/* logo web */
+.header__top .header__logo {
+    width: 50px;
+}
+/* End */
+.header__top .header__search-box {
+    background-color: white;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+/* input, select, button */
+.header__top .header__search-box input, select {
+    outline: none;
+    border: none;
+}
+.header__top .header__search-box select {
+        border-radius: 10px;
+
+    border-right: 1px solid #790b0b
+}
+.header__top .header__icon-search {
+    border: none;
+    padding: 0px;
+    background-color: white;
+}
+.header__top .header__icon-search img {
+    width: 15px
+}
+/* End */
+
+/* Header-body */
+.header-body {
+    background: url('../images/bg-menu.png');
+    background-repeat: repeat-x;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.header-body img {
+    align-self: flex-start;
+    margin-top: 5px;
+}
+.header-body .header__list-menu {
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.header-body .header__list-menu li {
+    padding-top: 9.5px
+}
